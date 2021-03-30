@@ -49,5 +49,9 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "can-use-dom": "^0.1.0",
+    "prop-types": "^15.7.2"
+  }
 }

@@ -1,10 +1,26 @@
 import React from 'react'
 
-import { ExampleComponent } from 'bindid-react'
+import { BindIDProvider, LoginButton } from 'bindid-react'
 import 'bindid-react/dist/index.css'
 
-const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
-}
+export default class App extends React.Component {
+  handleError = () =>{
+    console.log("nay!");
+  }
 
-export default App
+  handleSuccess = () =>{
+    console.log("yay!");
+  }
+
+  render(){
+    const options = {
+      redirectUri: "http://localhost:3000/redirect/"
+    }
+
+    return(
+      <BindIDProvider clientId="">
+        <LoginButton options={options} onError={this.handleError} onCompleted={this.handleSuccess} />
+      </BindIDProvider>
+    )
+  }
+}

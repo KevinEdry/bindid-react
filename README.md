@@ -46,8 +46,8 @@ The LoginButton can accept these parameters:
 | options | object |	✓ |
 | onCompleted | function |✘ |
 | onError |function  |✘	 |
-| className |function  |✘ |
-| style |function  |✘|
+| className |string  |✘ |
+| style |object  |✘|
 
 The `options` object as follows:
 |Parameter| Type | Required

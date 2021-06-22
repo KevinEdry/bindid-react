@@ -78,6 +78,7 @@ class Example extends Component {
 ```
 
 The default `LoginButton` component styling will look like this:
+<br/>
 ![enter image description here](https://i.imgur.com/HaqhSbx.png)
 
 ## License

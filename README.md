@@ -1,4 +1,5 @@
 # bindid-react
+Please follow the [BindID Documentation](https://developer.bindid.io/docs/api/rest/topics/oidcAPIs/authorizationAPI/authorization_api) for further instructions
 
 > easy intergration for a native react component with bindid
 
@@ -11,6 +12,7 @@ npm install --save bindid-react
 ```
 
 ## Usage
+
 ### BindIDProvider
 The BindIDProvider is responsible for initializing the BindID SDK. This can be used in a high order component and should receive the following parameters:
 |Parameter| Type | Required

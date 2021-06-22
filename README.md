@@ -15,12 +15,21 @@ npm install --save bindid-react
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'bindid-react'
+import { BindIDProvider, LoginButton } from 'bindid-react'
+import 
 import 'bindid-react/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    const options = {
+      redirectUri: 'YOUR_REDIRECT_URI',
+    }
+    
+    return (
+      <BindIDProvider clientId="YOUR_CLIENT_ID">
+        <LoginButton options={options}/>
+      </BindIDProvider>
+    )
   }
 }
 ```
